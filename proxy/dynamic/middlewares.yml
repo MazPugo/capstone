@@ -1,0 +1,17 @@
+http:
+  middlewares:
+    cors:
+      headers:
+        accessControlAllowOriginList:
+          - "http://xxxxxx"
+        accessControlAllowMethods:
+          - GET
+          - POST
+          - OPTIONS
+        accessControlAllowHeaders:
+          - "*"
+        accessControlAllowCredentials: true
+
+
+
+
