@@ -1,17 +1,20 @@
+---
 http:
   middlewares:
     cors:
       headers:
-        accessControlAllowOriginList:
-          - "http://xxxxxx"
         accessControlAllowMethods:
           - GET
           - POST
+          - PUT
+          - DELETE
           - OPTIONS
         accessControlAllowHeaders:
+          - Authorization
+          - Content-Type
+        accessControlAllowOriginList:
           - "*"
         accessControlAllowCredentials: true
-
-
-
+        accessControlMaxAge: 100
+        addVaryHeader: true
 
